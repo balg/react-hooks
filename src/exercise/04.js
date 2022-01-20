@@ -47,9 +47,9 @@ function Game() {
   const winner = calculateWinner(squares)
   const status = calculateStatus(winner, squares, nextValue)
 
-  function pushToHistory(step) {
+  function pushToHistory(stepSquares) {
     const stepsToKeep = historySteps.slice(0, currentStep + 1)
-    setHistorySteps([...stepsToKeep, step])
+    setHistorySteps([...stepsToKeep, stepSquares])
     setCurrentStep(prev => prev + 1)
   }
 
