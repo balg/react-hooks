@@ -19,7 +19,7 @@ function Tilt({children}) {
     return () => {
       tiltNode.vanillaTilt.destroy()
     }
-  }, [])
+  }, [containerRef])
 
   return (
     <div className="tilt-root" ref={containerRef}>
